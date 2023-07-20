@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #page {
+    display: flex;
+    height: 100%;
+  }
+  
+  #lefthalf {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em; /* Add some padding to ensure #splash is not touching the edge of the window */
+    background-color: black;
+    color: white;
+    overflow: auto; /* Add overflow auto to enable scrolling when content height exceeds viewport height */
+}
+  
+  
+    #splash {
+        width: 100%;
+        max-width: 29rem;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+  #logo,
+  #quote {
+    margin: 0;
+  }
+
+  #logo{
+    align-self: start;
+    font-size: 3rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+   
+  }
+  
+  #righthalf {
+    flex: 1;
+    background-color: lightgray; /* Example color */
+  }
