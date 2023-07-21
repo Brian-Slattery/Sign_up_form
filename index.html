@@ -24,18 +24,22 @@
 
     <div id="righthalf">
 
-    <h1>Get Started</h1>
+    <h1 id="title">Get Started</h1>
 
     <form action="#" method="post">
     
-        <div id="Contact Information">
+        <div id="ContactInformation">
 
+            <div id="firstnamestuff">
             <label for="firstname">First Name</label>
             <input type="text" placeholder="John" minlength="2" maxlength="10" name="firstname" id="firstname" required>
+            </div>
 
+            <div id="lastnamestuff">
             <label for="lastname">Last Name</label>
             <input type="text" placeholder="Doe" minlength="2" maxlength="20" name="lastname" id="lastname" required>
-        
+            </div>
+
         </div>
 
         <div id="emailstuff">
@@ -47,16 +51,22 @@
 
         <div id="passwordstuff">
 
-            <label for="password">Password</label>
-            <input type="password" name="password" minlength="7" id="password" required>
+            <div id="passwordthings">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" name="password" minlength="7" id="password" required>
+            </div>
 
-            <label for="confirm">Confirm Password</label>
-            <input type="password" name="confirm" minlength="7" id="confirm" required>
+            <div id="confirmstuff">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" placeholder="password" name="confirm" minlength="7" id="confirm" required>
+            </div>
 
         </div>
 
-        <button type="submit">Create Account</button>
 
+        <div id="buttonstuff">
+        <button id="submit" type="submit">Create Account</button>
+        </div>
     </form>
 
     </div>
